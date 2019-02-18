@@ -3,8 +3,10 @@ MAINTAINER Jianshen Liu <jliu120@ucsc.edu>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
-        dhcpcd5
-		
+        dhcpcd5 \
+	vim \
+	nano
+			
 ENV SQUID_VERSION=3.5.27 \
     SQUID_CACHE_DIR=/var/spool/squid \
     SQUID_LOG_DIR=/var/log/squid \
